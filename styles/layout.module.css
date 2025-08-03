@@ -47,6 +47,11 @@
   display: block;
 }
 
+.logoHeader {
+  width: 80px;
+  height: 50px;
+}
+
 .logo {
   fill: #ddd;
   width: 80px;

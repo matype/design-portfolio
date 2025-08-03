@@ -1,0 +1,55 @@
+export const metadata = {
+  title: "0xProto",
+  client: "0xType",
+}
+
+import Image from "next/legacy/image"
+import Date from "/components/date"
+import mdxStyles from "/styles/mdx.module.css"
+
+文字の識別しやすさに重点を置いた、オープンソースのプログラミング用フォントです。
+
+<div className={mdxStyles.image}>
+  <Image
+    priority
+    src={`/images/works/0xproto/examples.png`}
+    width={1200}
+    height={630}
+    alt={"0xProto - glyphs example"}
+    objectFit="contain"
+  />
+</div>
+
+テキストエディタやターミナルソフト上で小さく表示されても、似ている文字の区別がつくように設計しています。
+
+<div className={mdxStyles.image}>
+  <Image
+    priority
+    src={`/images/works/0xproto/distinction.png`}
+    width={1200}
+    height={630}
+    alt={"0xProto - feature"}
+    objectFit="contain"
+  />
+</div>
+
+また、OpenType Features を応用し、特定の文字が別の特定の文字に並んだときに字形を変更する機能を提供しています。
+
+ソースコードの表示には等幅フォントが使われることが多いですが、その性質上、横に広い「`m`」などはつぶれたような見た目になりがちです。
+0xProto では Texture Healing を利用することで、等幅を保ったまま、識別しやすい文字を描画できます。
+
+<div className={mdxStyles.image}>
+  <Image
+    priority
+    src={`/images/works/0xproto/texture-healing.gif`}
+    width={1200}
+    height={717}
+    alt={"0xProto - Texture Healing"}
+    objectFit="contain"
+  />
+</div>
+
+より詳細の解説は GitHub を確認してください。また、他のグラフィックはインスタグラムに投稿しています。
+
+- [GitHub (0xType/0xProto)](https://github.com/0xType/0xProto)
+- [Instagram (@0xtype)](https://www.instagram.com/0xtype)

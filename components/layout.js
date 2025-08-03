@@ -2,9 +2,9 @@ import Head from "next/head"
 import Link from "next/link"
 import styles from "/styles/layout.module.css"
 
-const name = "morishitter.com"
-export const siteTitle = "VUG by Morishitter"
-export const domain = "https://morishitter.com"
+const name = "Masaaki Morishita"
+export const siteTitle = "VUG by Masaaki Morishita"
+export const domain = "localhost:3000"
 
 export default function Layout({ children, home }) {
   return (
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
           </h1>
           <ul className={styles.links}>
             <li className={styles.linkItem}>
-              <Link href={`https://masaaki.me`}>About / Contact</Link>
+              <Link href={"/about"}>About / Contact</Link>
             </li>
           </ul>
         </div>
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
             <path d="M434.91,75.16c0-39.9,32.24-72.14,72.14-72.14,15.72,0,29.62,4.84,41.31,13.3L564.68,0l35.87,35.87-21.36,21.36v43.12c0,39.9-32.44,72.34-72.14,72.34h-5.04v-25.59c-36.88-2.42-67.1-33.25-67.1-71.94Zm50.38,0c0,12.09,9.67,21.76,21.76,21.76,12.09,0,21.76-9.67,21.76-21.76s-9.67-21.76-21.76-21.76-21.76,9.67-21.76,21.76Z" />
           </svg>
         </div>
-        <small className={styles.copy}>by Morishitter</small>
+        <small className={styles.copy}>by Masaaki Morishita</small>
       </footer>
     </div>
   )

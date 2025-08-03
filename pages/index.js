@@ -21,8 +21,9 @@ export default function WorkHome({ allGalleriesData }) {
         <title>{siteTitle}</title>
       </Head>
       <p className={styles.caution}>
-        ビジュアルを伴うアウトプット Only です。仕事では GUI
+        ポートフォリオをご覧いただきありがとうございます。仕事では GUI
         を作ることが多いですが、アーカイブと相性が良くないのでグラフィックが多めです。
+        ビジュアルのアウトプットからはわからないことも多々あるはずなので、よろしければ気軽にご連絡ください。
       </p>
       <GalleryList galleries={allGalleriesData} />
     </Layout>
