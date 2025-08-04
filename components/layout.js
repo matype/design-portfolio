@@ -16,6 +16,7 @@ export default function Layout({ children, home }) {
         <meta property="og:image" content={`${domain}/og-image.png`} />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="noindex,nofollow" />
       </Head>
       <header className={styles.header}>
         <div className={styles.inner}>
